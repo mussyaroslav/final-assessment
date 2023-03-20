@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--background-dark);
+  color: var(--color-text);
+}
+
+p, h1, h2, h3, h4, h5, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1330px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container__basket {
+  max-width: 890px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

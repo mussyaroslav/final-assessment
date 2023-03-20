@@ -1,0 +1,15 @@
+.login__btn__div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__and__password__error {
+  font-size: 8px;
+  font-weight: 300;
+  color: #FF0B0B;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  height: 10px;
+}

@@ -1,0 +1,41 @@
+.footer__basket__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__price__div {
+  display: flex;
+  align-items: center;
+}
+
+.footer__price__div h2 {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.footer__price__div p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.footer__btn {
+  outline: none;
+  color: #131313;
+  background: var(--main-color);
+  height: 42px;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footer__basket {
+  border-top: 1px solid var(--main-color);
+  height: 89px;
+  display: flex;
+  align-items: center;
+}

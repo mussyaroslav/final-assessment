@@ -1,0 +1,76 @@
+.basket__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.basket__title p{
+  font-weight: 500;
+}
+
+.basket__title {
+  width: 280px;
+}
+
+.basket__img img{
+  width: 122px;
+  height: 122px;
+}
+
+.basket__price p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-color);
+  margin-right: 15px;
+}
+
+.basket__price {
+  display: flex;
+  align-items: center;
+}
+
+.basket__btn__delete {
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.basket__btn__delete svg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket__btn__delete:hover {
+  border: 1px solid var(--color-text);
+  transition: .12s all linear;
+}
+
+.basket__btn__delete:hover svg path {
+  transition: .12s all linear;
+  fill: var(--color-text);
+}
+
+.basket__main {
+  height: calc(100vh - 219px);
+  overflow-y: auto;
+}
+
+.basket__title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.basket__title a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+  transition: .12s all linear;
+}

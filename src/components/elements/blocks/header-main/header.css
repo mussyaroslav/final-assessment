@@ -1,0 +1,90 @@
+.header {
+  padding: 50px 0;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+}
+
+.header__title h1{
+  font-size: 31px;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+.header__busket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.busket__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.busket__price p {
+  text-align: end;
+}
+
+.busket {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busket:hover {
+  transition: .12s all linear;
+  background: var(--main-color-hover);
+}
+
+.path__busket {
+  fill: white;
+}
+
+.busket:hover .path__busket {
+  transition: .12s all linear;
+  fill: rgb(167, 155, 155);
+}
+
+.link__to__basket {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.busket__price:hover {
+  text-decoration: underline;
+  transition: .12s all linear;
+}
+
+.logout__div {
+  margin-right: 18px;
+  margin-left: 22px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout__div button {
+  width: 200px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid var(--main-color);
+  background: none;
+  color: var(--main-color);
+  cursor: pointer;
+}

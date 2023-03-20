@@ -1,0 +1,136 @@
+.card__div {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.card__main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product__card {
+  border: 1px solid var(--main-color);
+  padding: 43px 21px 32px 21px;
+  width: 24%;
+  height: 552px;
+  margin: 10px 6px;
+}
+
+.product__title {
+  margin-top: 31px;
+  height: 40px;
+}
+
+.product__title a {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.product__title a:hover {
+  transition: .12s all linear;
+  text-decoration: underline;
+}
+
+.product__description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 13px;
+  color: var(--color-text);
+  height: 72px;
+}
+
+.price__div {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.slash, .time {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn__plus {
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.btn__plus:hover {
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .product__description {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .price {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .slash {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .time {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .product__title a {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.basket__btn__delete1 {
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.basket__btn__delete1 svg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket__btn__delete1:hover {
+  border: 1px solid var(--main-color);
+  transition: .12s all linear;
+}
+
+.basket__btn__delete1:hover svg path {
+  transition: .12s all linear;
+  fill: var(--main-color);
+}
