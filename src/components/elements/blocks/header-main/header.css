@@ -88,3 +88,9 @@
   color: var(--main-color);
   cursor: pointer;
 }
+
+.logout__div button:hover {
+  border-color: white;
+  color: white;
+  transition: .12s all linear;
+}
