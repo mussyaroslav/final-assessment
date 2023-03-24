@@ -3,7 +3,6 @@ import { Navigate, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import Header from '../../components/elements/blocks/header-main/header';
 import { addProductsBasket, removeProductsBasket } from '../../store/reducers/products';
-import { useRef } from 'react'
 
 function Product() {
 
@@ -14,8 +13,9 @@ function Product() {
   const currentProduct = products[id - 1]
 
   const dispatch = useDispatch()
-  const addCase = useRef()
-  const removeCase = useRef()
+
+  const productsBasket = useSelector(state => state.products.basketProducts)
+  const isProductInBasket = productsBasket.some(product => product.id === currentProduct.id)
 
   const addProduct = () => {
     const item = {
@@ -26,14 +26,10 @@ function Product() {
     }
 
     dispatch(addProductsBasket(item))
-    addCase.current.style.display = 'none'
-    removeCase.current.style.display = 'block'
   }
 
   const removeProduct = () => {
     dispatch(removeProductsBasket(currentProduct.id))
-    removeCase.current.style.display = 'none'
-    addCase.current.style.display = 'block'
   }
 
   if(!isLoggedIn) {
@@ -59,12 +55,15 @@ function Product() {
                     <p className='slash2'>&nbsp; / &nbsp;</p>
                     <p className='quantity2'>{currentProduct.quantity} г.</p>
                   </div>
-                  <div className='product__btn__div'>
-                    <button ref={addCase} onClick={addProduct} className='product__btn1'>В корзину</button>
-                  </div>
-                  <div className='product__btn__div'>
-                    <button ref={removeCase} onClick={removeProduct} className='product__btn2'>Удалить</button>
-                  </div>
+                  {isProductInBasket ? (
+                    <div className='product__btn__div'>
+                      <button onClick={removeProduct} className='product__btn2'>Удалить</button>
+                    </div>
+                  ) : (
+                    <div className='product__btn__div'>
+                      <button onClick={addProduct} className='product__btn1'>В корзину</button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
